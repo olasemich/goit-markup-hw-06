@@ -554,8 +554,26 @@ a {
 }
 
 .list-team {
-    display: flex;
-    gap: 24px;
+    /*for phones*/
+
+    column-gap: 72px;
+}
+
+@media screen and (min-width: 768px; ) {
+    .list-team {
+        /*for tablets*/
+        gap: 64px 32px;
+
+    }
+}
+
+@media screen and (min-width: 1158px; ) {
+    .list-team {
+        /*for desktop*/
+        gap: 32px;
+        display: flex;
+
+    }
 }
 
 .backdrop {
