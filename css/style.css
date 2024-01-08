@@ -95,6 +95,7 @@ a {
 .nav {
     display: flex;
     align-items: center;
+    flex-grow: 1;
 }
 
 .list {
@@ -621,7 +622,7 @@ a {
     column-gap: 72px;
 }
 
-@media screen and (min-width: 768px; ) {
+@media screen and (min-width: 768px) {
     .list-team {
         /*for tablets*/
         gap: 64px 32px;
@@ -629,7 +630,7 @@ a {
     }
 }
 
-@media screen and (min-width: 1158px; ) {
+@media screen and (min-width: 1158px) {
     .list-team {
         /*for desktop*/
         gap: 32px;
@@ -928,4 +929,18 @@ a {
 .subscribe-form-icon {
     fill: white;
     margin-left: 16px;
+}
+
+/*mobile menu*/
+.menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+}
+
+@media only screen and (min-width:760px) {
+    .menu-btn {
+        display: none;
+    }
 }
